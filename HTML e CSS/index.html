@@ -6,27 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/fe8ec55056.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
   <title>Helder Lopes - Frontend</title>
 </head>
 
 <body>
-  <header>
+  <header class="mainheader">
     <!--header principal da pagina-->
-    <img style="width:100px ;" src="helder-img.jpg" alt="ilustração do rosto de Helder Lopes">
-    <h1>Helder Lopes</h1>
-    <h2>Desenvolvedor Frontend</h2>
+    <img class="photo" src="helder-img.jpg" alt="ilustração do rosto de Helder Lopes">
+    <header>
+    <h1 id="title">Helder Lopes</h1>
+    <h2 class="subtitle">Desenvolvedor Frontend</h2>
   </header>
+  </header> 
 
   <section>
     <!--Lista de posts-->
     <header>
-      <h2>Posts</h2>
+      <h2 class="subtitle">Posts</h2>
     </header>
-    <article>
+    <article class="post">
       <header>
-        <h3>Post #1</h3>
-        <img style="width: 300px;" src="florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="imagem com codigo HTML">
-        <p>
+        <h3 class="post-title">Post #1</h3>
+        <img class="post-image" src="florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="imagem com codigo HTML">
+      </header>
+        <p class="post-content">
           Semântica HTML5 está mais intuitiva e facilita a organização dos trechos do site. Veja mais na pagina sobre <a
             href="semantica.html" target="_blank">Semantica</a>.
         </p>
@@ -35,7 +39,23 @@
             href="mailto:helder.engenhariadepesca@gmail.com">helder.engenhariadepesca@gmail.com</a> ou whatsapp: <a
             href="tel:+5516988125047">+55 16 98812-5047</a>
         </p>
+      
+    </article>
+    <article class="post">
+      <header>
+        <h3 class="post-title">Post #2</h3>
+        <img class="post-image" src="maik-jonietz-_yMciiStJyY-unsplash.jpg" alt="imagem com codigo HTML">
       </header>
+        <p class="post-content">
+          A importância da estilização do conteudo é o impacto na experiência do usuário. Uma página bem estilizada além de bonita colabora para que o leitor tenha uma melhor expeciencia do ponto de vista do conforto, acessibilidade e praticidade no acesso aos conteudos do site. Veja mais em  <a
+            href="semantica.html" target="_blank">Semantica</a>.
+        </p>
+        <p>
+          Qualquer dúvida, envie um email para: <a
+            href="mailto:helder.engenhariadepesca@gmail.com">helder.engenhariadepesca@gmail.com</a> ou whatsapp: <a
+            href="tel:+5516988125047">+55 16 98812-5047</a>
+        </p>
+      
     </article>
   </section>
 
@@ -43,10 +63,12 @@
     <!--Footer  da pagina para mostrar formas de contato-->
     <ul>
       <li>
-        <a href="mailto:helder.engenhariadepesca@gmail.com"><i class="fa-solid fa-envelope"></i> helder.engenhariadepesca@gmail.com</a>
+        <a href="mailto:helder.engenhariadepesca@gmail.com"><i class="fa-solid fa-envelope"></i>
+          helder.engenhariadepesca@gmail.com</a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/enghelderlopes/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+        <a href="https://www.linkedin.com/in/enghelderlopes/" target="_blank"><i class="fa-brands fa-linkedin"></i>
+          Linkedin</a>
       </li>
       <li>
         <a href="https://github.com/helderlopess" target="_blank"><i class="fa-brands fa-github-square"></i> Github</a>
