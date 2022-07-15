@@ -3,7 +3,9 @@ body {
   color: #081844;
   background-color: rgb(236, 236, 236);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
+  background-image: url(https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-desenvolvimento_114360-562.jpg?t=st=1655630360~exp=1655630960~hmac=32da984d763666acd9530abcbd55fd98f6ac0f24ecc8e9a4bcc8bcaee33a26a2&w=1500);
+  
+  }
 
 .mainheader,
 body section {
@@ -55,7 +57,7 @@ li {
 }
 
 .post {
-  background-color: rgb(255, 255, 255);
+  background-color:#ebebebf6 ;
   padding: 15px;
   margin: auto 0;
   margin-bottom: 30px;

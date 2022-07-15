@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .flex-container {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap
+    }
+
+    .flex-item {
+      background-color: blue;
+      height: 50px;
+      width: 10px;
+      line-height: 50px;
+      font-size: 20px;
+      color: white;
+      text-align: left;
+      margin: 5px;
+      padding: 0px 10px;
+    }
+
+    .row {
+      flex-direction: row-reverse;
+
+    }
+
+    .row-reverse {}
+
+    .column {
+      float: left;
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body>
+  <p class="">FLEX CONTAINER PADRÃO</p>
+  <ul class="flex-container">
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>   
+  </ul>
+
+  <p class="">FLEX CONTAINER ROW REVERSE</p>
+  <ul class="flex-container row-reverse row">
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+  </ul>
+
+  <p class="">FLEX CONTAINER ROW REVERSE</p>
+  <ul class="flex-container column">
+    <li class="flex-item">1</li>
+    <li class="flex-item">2</li>
+    <li class="flex-item">3</li>
+    <li class="flex-item">4</li>
+    <li class="flex-item">5</li>
+  </ul>
+</body>
+
+</html>
