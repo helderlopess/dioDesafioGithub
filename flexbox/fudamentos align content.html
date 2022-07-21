@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>align content</title>
+  <style>
+    .container {
+      height: 350px;
+      max-width: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      border: 1px solid black;
+    }
+
+    .item {
+      background-color: rgb(91, 141, 16);
+      padding: 0 5px;
+      margin: 5px;
+      flex: 1;
+      text-align: center;
+      color: white;
+    }
+
+    .stretch {
+      align-content: stretch;
+    }
+
+    .center {
+      align-content: center;
+    }
+
+    .flex-start {
+      align-content: flex-start;
+    }
+  </style>
+</head>
+
+<body>
+  <p>stretch</p>
+  <div class="container stretch">
+    <div class="item">Mussum Ipsum, </div>
+    <div class="item">cacilds vidis litro abertis. </div>
+    <div class="item">Em pé sem cair, deitado sem dormir</div>
+    <div class="item">Em pé sem cair, deitado sem dormir</div>
+    <div class="item">Em pé sem cair, deitado sem dormirEm pé sem cair, deitado sem dormir, sentado sem cochilar e
+      fazendo pose.P eu reclamis.Cevadis .</div>
+    <div class="item">Em pé sem cair, deitado sem dormir</div>
+    <div class="item">Em pé sem cair deitado sem dormir</div>
+    <div class="item">Em pé sem cair deitado sem dormir</div>
+  </div>
+
+  <p>center</p>
+  <div class="container center">
+    <div class="item">Mussum Ipsum, </div>
+    <div class="item">cacilds vidis litro abertis. </div>
+    <div class="item">Em pé sem cair, deitado sem dormir</div>
+    <div class="item">Em pé sem cair, deitado sem dormir</div>
+    <div class="item">Em pé sem cair, deitado sem dormirEm pé sem cair, deitado sem dormir, sentado sem cochilar e
+      fazendo pose.</div>
+    <div class="item">Em pé sem cair, deitado sem dormir</div>
+    <div class="item">Em pé sem cairdeitado sem dormir</div>
+    <div class="item">Em pé sem cairdeitado sem dormir</div>
+  </div>
+
+  <p>flex start</p>
+  <div class="container flex-start">
+    <div class="item">Mussum Ipsum, </div>
+    <div class="item">cacilds vidis litro abertis. </div>
+    <div class="item">Em pé sem cair, deitado sem dormir</div>
+    <div class="item">Em pé sem cair, deitado sem dormir</div>
+    <div class="item">Em pé sem cair, deitado sem dormirEm pé sem cair, deitado sem dormir, sentado sem cochilar e
+      fazendo pose.</div>
+    <div class="item">Em pé sem cair, deitado sem dormir</div>
+    <div class="item">Em pé sem cairdeitado sem dormir</div>
+    <div class="item">Em pé sem cairdeitado sem dormir</div>
+  </div>
+</body>
+
+</html>

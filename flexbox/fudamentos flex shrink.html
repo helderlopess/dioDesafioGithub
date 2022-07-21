@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+     .flex-container {
+      max-width: 550px;
+      display: flex;
+      border: 1px solid rgb(2, 179, 96);
+    }
+
+    .item {
+      background-color: rgb(2, 141, 16);
+      padding: 10px;
+      margin: 5px;
+      font-size: 24px;
+      text-align: center;
+      color: white;
+    }
+
+    .item:hover {
+      background-color: rgb(56, 90, 5);
+      transition-timing-function: ease-in;
+      transition-duration: 0.4s;
+      flex-grow: 2;
+    }
+
+    .s-1{
+      flex-shrink: 1;
+    }
+    
+    .s-0{
+      flex-shrink: 1;
+      flex-basis: 100px;
+    }
+
+    .fg-1{
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="item s-1 fg-1">Home</div>
+    <div class="item s-1 fg-1">Galeria</div>
+    <div class="item s-1 fg-1">Parceiros</div>
+    <div class="item s-1 fg-1">agenda</div>
+    <div class="item s-1 fg-1">Contatos</div>
+   
+  </div>
+
+  <div class="flex-container">
+    <div class="item s-0 fg-1">Home</div>
+    <div class="item s-0 fg-1">Galeria</div>
+    <div class="item s-0 fg-1">Parceiros ativos</div>
+    <div class="item s-0 fg-1">agenda</div>
+    <div class="item s-0 fg-1">Contatos</div>
+   
+  </div>  
+</body>
+</html>

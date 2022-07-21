@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex grow</title>
+  <style>
+    .flex-container {
+      min-width: 500px;
+      display: flex;
+      border: 1px solid rgb(2, 179, 96);
+    }
+
+    .item {
+      background-color: rgb(2, 141, 16);
+      padding: 10px;
+      margin: 5px;
+      text-align: center;
+      color: white;
+    }
+
+    .item:hover {
+      background-color: rgb(56, 90, 5);
+      transition-timing-function: ease-in;
+      transition-duration: 0.4s;
+      flex-grow: 2;
+    }
+
+    .bauto {
+      flex-basis: auto;
+    }
+
+    .fg-1 {
+      flex-grow: 1;
+    }
+    
+    .b-0{
+      flex-basis: 0;
+    }
+
+    .w100{
+      width:100px;
+    }
+  </style>
+
+<body>
+  
+  <p>auto. respeita descendo conforme a proporcionalidade</p>
+  <div class="flex-container ">    
+    <div class="item bauto fg-1">AAAAAAAAAAAA</div>
+    <div class="item bauto fg-1">BBB</div>
+    <div class="item bauto fg-1">C</div>
+    <div class="item bauto fg-1">DEF</div>
+  </div>
+
+  <p>0 (zero). cresce mantendo a largura pre definida</p>
+  <div class="flex-container ">    
+    <div class="item b-0 fg-1">AAAAAAAAA</div>
+    <div class="item b-0 fg-1">BBB</div>
+    <div class="item b-0 fg-1">C</div>
+    <div class="item b-0 fg-1">DEF</div>
+  </div>
+
+  <p>basis + width definido</p>
+  <div class="flex-container ">    
+    <div class="item w100 fg-1">AAAAAAAAA</div>
+    <div class="item w100 fg-1">BBB</div>
+    <div class="item w100 fg-1">C</div>
+    <div class="item w100 fg-1">DEF</div>
+  </div>
+</body>
+
+</html>

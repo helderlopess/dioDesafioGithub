@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex grow</title>
+  <style>
+    .container {
+      display: flex;
+      padding: 2px;
+      border: 1px solid rgb(2, 179, 96);
+    }
+
+    .item {
+      background-color: rgb(91, 141, 16);
+      padding: 10px;
+      margin: 5px;
+      text-align: center;
+      color: white;
+    }
+
+    .item:hover {
+      background-color: rgb(56, 90, 5);
+      transition-timing-function: ease-in;
+      transition-duration: 0.4s;
+    }
+
+    .fg-0 {
+      flex-grow: 0;
+    }
+
+    .fg-1 {
+      flex-grow: 1;
+    }
+
+    .fg-2 {
+      flex-grow: 2;
+    }
+
+    .fg-3 {
+      flex-grow: 3;
+    }
+  </style>
+
+<body>
+
+  <p>fg-0</p>
+  <div class="container">
+    <div class="item fg-0">A</div>
+    <div class="item fg-0">B</div>
+    <div class="item fg-0">C</div>
+    <div class="item fg-0">D</div>
+  </div>
+
+  <p>fg-1</p>
+  <div class="container">
+    <div class="item fg-1">A</div>
+    <div class="item fg-1">B</div>
+    <div class="item fg-1">C</div>
+    <div class="item fg-1">D</div>
+  </div>
+
+  <p>fg-2</p>
+  <div class="container">
+    <div class="item fg-2">A</div>
+    <div class="item fg-2">B</div>
+    <div class="item fg-2">C</div>
+    <div class="item fg-2">D</div>
+  </div>
+
+  <p>fg-3</p>
+  <div class="container">
+    <div class="item fg-3">Home</div>
+    <div class="item fg-3">Fotos</div>
+    <div class="item fg-3">Parceiros</div>
+    <div class="item fg-3">Contato</div>
+  </div>
+
+</body>
+
+</html>
