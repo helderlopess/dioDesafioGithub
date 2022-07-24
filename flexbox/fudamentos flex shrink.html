@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-     .flex-container {
+    .flex-container {
       max-width: 550px;
       display: flex;
       border: 1px solid rgb(2, 179, 96);
@@ -15,7 +16,7 @@
     .item {
       background-color: rgb(2, 141, 16);
       padding: 10px;
-      margin: 5px;
+      m argin: 5px;
       font-size: 24px;
       text-align: center;
       color: white;
@@ -28,37 +29,61 @@
       flex-grow: 2;
     }
 
-    .s-1{
-      flex-shrink: 1;
+    .s-3 {
+      flex-shrink: 3;
     }
-    
-    .s-0{
-      flex-shrink: 1;
+
+    .s-2 {
+      flex-shrink: 2;
       flex-basis: 100px;
     }
 
-    .fg-1{
+    .s-1 {
+      flex-shrink: 1;
+    }
+
+    .s-0 {
+      flex-shrink: 0;
+      flex-basis: 100px;
+    }
+
+    .fg-1 {
       flex-grow: 1;
     }
   </style>
 </head>
+
 <body>
+  <p>Shrink 1 e flex grow 1 comprimem o texto e limitam o crescimento da box </p><br>
   <div class="flex-container">
+
     <div class="item s-1 fg-1">Home</div>
     <div class="item s-1 fg-1">Galeria</div>
     <div class="item s-1 fg-1">Parceiros</div>
     <div class="item s-1 fg-1">agenda</div>
     <div class="item s-1 fg-1">Contatos</div>
-   
-  </div>
 
+  </div>
+  <p>Shrink 0 e flex grow 1 comprimem o texto porem ele quebrara o texto caso o item seja maior e nao consiga ser
+    comprimido </p><br>
   <div class="flex-container">
     <div class="item s-0 fg-1">Home</div>
     <div class="item s-0 fg-1">Galeria</div>
     <div class="item s-0 fg-1">Parceiros ativos</div>
     <div class="item s-0 fg-1">agenda</div>
     <div class="item s-0 fg-1">Contatos</div>
-   
-  </div>  
+
+  </div>
+  <p>Shrink 2 e last com shrink 3, flex grow 1 comprimem o texto porem ele quebrara o texto caso o item seja maior e nao
+    consiga ser comprimido </p><br>
+  <div class="flex-container">
+    <div class="item s-1 fg-1">Home</div>
+    <div class="item s-2 fg-1">Galeria</div>
+    <div class="item s-2 fg-1">Parceiros ativos</div>
+    <div class="item s-2 fg-1">agenda</div>
+    <div class="item s-3 fg-1">Contatos</div>
+
+  </div>
 </body>
+
 </html>
