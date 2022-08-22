@@ -14,7 +14,7 @@ ul li a {
   text-decoration: none;
 }
 
-div img{
+div img {
   display: block;
   width: 100%;
 }
@@ -24,6 +24,8 @@ div img{
   max-width: 992px;
   margin: auto;
   width: 100%;
+  min-width: 320px;
+  /*padding: 10px 15px;*/
 }
 
 .header {
@@ -46,25 +48,27 @@ header .list-items {
   color: #fff;
 }
 
-.menu {
+header .menu {
   justify-content: space-between;
 }
 
 .apresentacao {
-  height: 100ph;
+  height: 100vh;
   align-items: center;
   justify-content: space-between;
 }
 
 .texto-apresentacao {
   min-height: 200px;
+  width: 100%;
 }
+
 .texto-apresentacao h1 {
   color: #122a57;
   font-size: 48px;
   margin-bottom: 10px;
 }
-.texto-apresentacao a {
+.btn {
   display: block;
   background-color: #122a57;
   color: #fff;
@@ -77,28 +81,208 @@ header .list-items {
   margin: 10px 0 10px;
 }
 
-#quem-somos{
+.btn:hover {
+  background-color: #122a57ec;
+  transition: 5ms;
+}
+
+#quem-somos {
   flex-direction: row-reverse;
   height: fit-content;
 }
 
-#quem-somos h2{
+#quem-somos h2 {
   font-size: 32px;
   color: #122a57;
   display: flex;
   margin-bottom: 20px;
 }
-#quem-somos h2::before{
+#quem-somos h2::before {
   content: "";
   height: 50px;
   width: 5px;
   margin-right: 5px;
   background-color: #122a57;
   position: relative;
-  
 }
 
-#quem-somos{
+#quem-somos p {
   margin-bottom: 10px;
   width: 90%;
+}
+
+#quem-somos img {
+  min-width: 350px;
+}
+
+.container-externo {
+  background-color: #122a57;
+}
+
+#servicos {
+  flex-direction: column;
+  padding: 50px 0 50px 0;
+}
+
+#servicos h2 {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.list-servicos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-servicos .item-servico {
+  text-align: center;
+}
+
+.item-servico a {
+  width: 220px;
+  color: #122a57;
+  background-color: #fff;
+  border-radius: 30px;
+  height: 50px;
+  text-align: center;
+  line-height: 10px;
+  margin-top: 30px;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.item-servico p {
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  line-height: 50px;
+}
+
+.item-servico img {
+  width: 80%;
+  margin: auto;
+}
+#planos {
+  flex-direction: column;
+  min-height: 100vh;
+}
+#planos h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.list-planos {
+  display: flex;
+  align-items: flex-end;
+}
+
+.item-plano {
+  flex: 1;
+  border: 5px solid #122a57;
+  padding: 10px;
+  margin: 10px 20px;
+  max-width: 240px;
+  margin-bottom: 20px;
+}
+
+.item-plano h3 {
+  font-size: 24px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.item-plano h3::after {
+  content: "";
+  background-color: #122a57;
+  width: 100%;
+  height: 3px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.item-plano .btn {
+  margin: auto;
+  margin-bottom: 20px;
+}
+.item-plano ul {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.item-plano ul li {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.item-plano ul li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: #122a57;
+}
+footer {
+  width: 100%;
+  height: 70px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  background-color: #122a57;
+}
+footer .footer {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+/*mobile*/
+@media (max-width: 992px) {
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .apresentacao {
+    flex-direction: column-reverse;
+  }
+
+  .texto-apresentacao {
+    width: 100%;
+  }
+
+  #quem-somos {
+    flex-direction: column-reverse;
+  }
+
+  #quem-somos img {
+    min-width: 320px;
+    margin: auto;
+  }
+
+  .list-servicos {
+    flex-direction: column;
+  }
+
+  .item-servico img {
+    width: 50%;
+    margin: auto;
+  }
+
+  .list-planos {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .list-planos .item-plano {
+    max-width: 90%;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
