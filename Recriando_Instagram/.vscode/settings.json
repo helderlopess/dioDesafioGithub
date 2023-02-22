@@ -1,0 +1,22 @@
+{
+  "editor.autoClosingBrackets": "beforeWhitespace",
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.trimAutoWhitespace": true,
+  "scm.diffDecorationsIgnoreTrimWhitespace": "inherit",
+  "diffEditor.ignoreTrimWhitespace": true,
+  "yaml.format.bracketSpacing": false,
+  "editor.letterSpacing": 0,
+  "terminal.integrated.letterSpacing": 0,
+  "editor.defaultFormatter": "formulahendry.code-runner",
+  "cSpell.autoFormatConfigFile": false,
+  "editor.insertSpaces": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.unfoldOnClickAfterEndOfLine": true,
+  "files.insertFinalNewline": true,
+  "prettier.endOfLine": "crlf",
+  "html-css-class-completion.enableEmmetSupport": true,
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  }
+}
